@@ -1,12 +1,10 @@
 ServiceBidder::Application.routes.draw do
-  get "pages/home"
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
 
-  get "pages/contact"
-
-  get "pages/about"
-
-  get "pages/help"
-  
+  root :to => 'pages#home'
+	
   resources :service_quotes
 
   resources :service_requests
