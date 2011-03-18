@@ -6,10 +6,10 @@ class Subscriber < ActiveRecord::Base
 	validates :email, :length => { :minimum => 5 }
 	validates :password, :length => { :minimum => 8 }
 	
-	def initialize(attributes = {})
-		@firstname  = attributes[:Firstname]
-		@lastname  = attributes[:Lastname]
-		@email = attributes[:email]
-		@password = attributes[:password]
-	end
+#	def initialize(attributes = {})
+#		@firstname  = attributes[:Firstname]
+#		@lastname  = attributes[:Lastname]
+#		@email = attributes[:email]
+#		@password = attributes[:password]
+#	end
 end

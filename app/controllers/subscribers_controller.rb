@@ -24,6 +24,7 @@ class SubscribersController < ApplicationController
   # GET /subscribers/new
   # GET /subscribers/new.xml
   def new
+	@title = "Sign up"
     @subscriber = Subscriber.new
 
     respond_to do |format|
