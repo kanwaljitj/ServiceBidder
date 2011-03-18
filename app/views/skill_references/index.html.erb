@@ -1,0 +1,27 @@
+<h1>Listing skill_references</h1>
+
+<table>
+  <tr>
+    <th>Skillprofile</th>
+    <th>Description</th>
+    <th>Additionalinfo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @skill_references.each do |skill_reference| %>
+  <tr>
+    <td><%= skill_reference.SkillProfile_id %></td>
+    <td><%= skill_reference.Description %></td>
+    <td><%= skill_reference.AdditionalInfo %></td>
+    <td><%= link_to 'Show', skill_reference %></td>
+    <td><%= link_to 'Edit', edit_skill_reference_path(skill_reference) %></td>
+    <td><%= link_to 'Destroy', skill_reference, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Skill reference', new_skill_reference_path %>

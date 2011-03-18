@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  SkillProfile_id: 1
+  Description: MyString
+  AdditionalInfo: MyString
+
+two:
+  SkillProfile_id: 1
+  Description: MyString
+  AdditionalInfo: MyString

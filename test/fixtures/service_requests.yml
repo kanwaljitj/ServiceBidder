@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Description: MyString
+  Subscriber_id: 1
+  SkillCategory_id: 1
+
+two:
+  Description: MyString
+  Subscriber_id: 1
+  SkillCategory_id: 1

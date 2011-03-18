@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Name: MyString
+  BusinessInfo: MyString
+  PrimaryTel: MyString
+  Mobile: MyString
+  WorkRadius: 1
+  EmailAlerts: false
+  Address_id: 1
+  Subscriber_id: 1
+  SkillCategory_id: 1
+
+two:
+  Name: MyString
+  BusinessInfo: MyString
+  PrimaryTel: MyString
+  Mobile: MyString
+  WorkRadius: 1
+  EmailAlerts: false
+  Address_id: 1
+  Subscriber_id: 1
+  SkillCategory_id: 1

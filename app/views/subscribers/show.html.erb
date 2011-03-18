@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @subscriber.Firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @subscriber.Lastname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @subscriber.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @subscriber.password %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @subscriber.Type %>
+</p>
+
+<p>
+  <b>Passwordreset:</b>
+  <%= @subscriber.PasswordReset %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @subscriber.Active %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscriber_path(@subscriber) %> |
+<%= link_to 'Back', subscribers_path %>

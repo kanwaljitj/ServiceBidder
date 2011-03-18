@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @skill_profile.Name %>
+</p>
+
+<p>
+  <b>Businessinfo:</b>
+  <%= @skill_profile.BusinessInfo %>
+</p>
+
+<p>
+  <b>Primarytel:</b>
+  <%= @skill_profile.PrimaryTel %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @skill_profile.Mobile %>
+</p>
+
+<p>
+  <b>Workradius:</b>
+  <%= @skill_profile.WorkRadius %>
+</p>
+
+<p>
+  <b>Emailalerts:</b>
+  <%= @skill_profile.EmailAlerts %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @skill_profile.Address_id %>
+</p>
+
+<p>
+  <b>Subscriber:</b>
+  <%= @skill_profile.Subscriber_id %>
+</p>
+
+<p>
+  <b>Skillcategory:</b>
+  <%= @skill_profile.SkillCategory_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_skill_profile_path(@skill_profile) %> |
+<%= link_to 'Back', skill_profiles_path %>

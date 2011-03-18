@@ -1,4 +1,18 @@
 ServiceBidder::Application.routes.draw do
+  resources :service_quotes
+
+  resources :service_requests
+
+  resources :skill_references
+
+  resources :skill_profiles
+
+  resources :skill_categories
+
+  resources :addresses
+
+  resources :subscribers
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

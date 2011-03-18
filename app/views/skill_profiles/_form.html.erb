@@ -1,0 +1,53 @@
+<%= form_for(@skill_profile) do |f| %>
+  <% if @skill_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skill_profile.errors.count, "error") %> prohibited this skill_profile from being saved:</h2>
+
+      <ul>
+      <% @skill_profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :BusinessInfo %><br />
+    <%= f.text_field :BusinessInfo %>
+  </div>
+  <div class="field">
+    <%= f.label :PrimaryTel %><br />
+    <%= f.text_field :PrimaryTel %>
+  </div>
+  <div class="field">
+    <%= f.label :Mobile %><br />
+    <%= f.text_field :Mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :WorkRadius %><br />
+    <%= f.text_field :WorkRadius %>
+  </div>
+  <div class="field">
+    <%= f.label :EmailAlerts %><br />
+    <%= f.check_box :EmailAlerts %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_id %><br />
+    <%= f.text_field :Address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Subscriber_id %><br />
+    <%= f.text_field :Subscriber_id %>
+  </div>
+  <div class="field">
+    <%= f.label :SkillCategory_id %><br />
+    <%= f.text_field :SkillCategory_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

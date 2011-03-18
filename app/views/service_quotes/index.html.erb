@@ -1,0 +1,27 @@
+<h1>Listing service_quotes</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Servicerequest</th>
+    <th>Subscriber</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @service_quotes.each do |service_quote| %>
+  <tr>
+    <td><%= service_quote.Amount %></td>
+    <td><%= service_quote.ServiceRequest_id %></td>
+    <td><%= service_quote.Subscriber_id %></td>
+    <td><%= link_to 'Show', service_quote %></td>
+    <td><%= link_to 'Edit', edit_service_quote_path(service_quote) %></td>
+    <td><%= link_to 'Destroy', service_quote, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Service quote', new_service_quote_path %>

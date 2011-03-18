@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Line1: MyString
+  Line2: MyString
+  City: MyString
+  State: MyString
+  ZipCode: MyString
+  Extension: MyString
+  Country: MyString
+  Subscriber_id: 1
+
+two:
+  Line1: MyString
+  Line2: MyString
+  City: MyString
+  State: MyString
+  ZipCode: MyString
+  Extension: MyString
+  Country: MyString
+  Subscriber_id: 1

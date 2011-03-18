@@ -1,0 +1,45 @@
+<%= form_for(@subscriber) do |f| %>
+  <% if @subscriber.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
+
+      <ul>
+      <% @subscriber.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Firstname %><br />
+    <%= f.text_field :Firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :Lastname %><br />
+    <%= f.text_field :Lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br />
+    <%= f.text_field :Type %>
+  </div>
+  <div class="field">
+    <%= f.label :PasswordReset %><br />
+    <%= f.check_box :PasswordReset %>
+  </div>
+  <div class="field">
+    <%= f.label :Active %><br />
+    <%= f.check_box :Active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

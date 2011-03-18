@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @service_quote.Amount %>
+</p>
+
+<p>
+  <b>Servicerequest:</b>
+  <%= @service_quote.ServiceRequest_id %>
+</p>
+
+<p>
+  <b>Subscriber:</b>
+  <%= @service_quote.Subscriber_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_quote_path(@service_quote) %> |
+<%= link_to 'Back', service_quotes_path %>

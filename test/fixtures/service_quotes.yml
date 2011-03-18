@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Amount: 9.99
+  ServiceRequest_id: 1
+  Subscriber_id: 1
+
+two:
+  Amount: 9.99
+  ServiceRequest_id: 1
+  Subscriber_id: 1
