@@ -3,6 +3,8 @@ ServiceBidder::Application.routes.draw do
 
   get "pages/contact"
 
+  get "pages/about"
+
   resources :service_quotes
 
   resources :service_requests
